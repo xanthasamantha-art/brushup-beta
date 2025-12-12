@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BrushUp!</title>
+    <link rel="icon" type="image/png" href="../assets/artylogo2.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--MVP Dashboard - non functional for now but we'll turn this into a masterpiece!-->
+    <header class="top-header">
+        <div class="prompt-area" id="artyPromptBtn" role="button" tabindex="0">
+            <img src="../assets/artylogo.png" alt="Arty" class="arty-icon" />
+            <div class="prompt-text">
+                <strong>Arty Prompt of the Day</strong>
+                <div class="prompt-subtext">Click to reveal today's community prompt</div>
+                <div class="prompt-reveal" id="artyPromptText" hidden></div>
+            </div>
+        </div>
+
+        <h1 class="page-title">BrushUp Dashboard</h1>
+    </header>
+
+
+    <nav>
+        <a href="unit1.html"> Unit 1 </a>
+        <a href="projects.html"> Projects </a>
+        <a href="shop.html"> Shop </a>
+        <a href="profile.html"> Profile</a>
+        <a href="bug-report.html"> Bug Report! </a>
+    </nav>
+
+    <main>
+
+        <section id="streak">
+            <h2>Your Streak</h2>
+            <p>Current streak: 0 days</p>
+        </section>
+
+        <section id="coins">
+            <h2>Arty Coins</h2>
+            <p>Total coins: 0</p>
+        </section>
+
+        <section id="continue">
+            <h2>Continue Learning</h2>
+            <a href="unit1.html" class="button">
+                Continue Unit 1
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
