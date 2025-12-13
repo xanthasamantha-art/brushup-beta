@@ -1,0 +1,148 @@
+/* ---------- Global ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+.page-title {
+    margin: 0;
+}
+
+.prompt-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fafafa;
+    cursor: pointer;
+    max-width: 420px;
+}
+
+    .prompt-area:active {
+        transform: scale(0.98);
+    }
+
+
+.prompt-area {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+
+    .prompt-area:hover {
+        background: #f2f2f2;
+    }
+
+.arty-icon {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.prompt-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt-subtext {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.prompt-reveal {
+    margin-top: 8px;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+}
+
+
+/* ---------- Navigation ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+/* ---------- Main Content ---------- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+/* ---------- Sections ---------- */
+section {
+    background-color: #ffffff;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+    section h2 {
+        margin-top: 0;
+    }
+
+/* ---------- Button Link ---------- */
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+    .button:hover {
+        background-color: #43a047;
+    }
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 0.9em;
+    color: #777;
+}
