@@ -146,3 +146,146 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
+
+/* Basic page spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #222;
+    background: #fafafa;
+}
+
+.site-header h1 {
+    margin: 16px 0 8px;
+    text-align: center;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* -------- Navigation (matches your screenshot) -------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+/* -------- Progress -------- */
+.progress-bar {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 16px;
+}
+
+.progress-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+    .progress-title h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+.progress-count {
+    margin: 0;
+    color: #555;
+}
+
+.progress-track {
+    margin-top: 10px;
+    height: 10px;
+    background: #eee;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #333; /* simple for now */
+}
+
+/* -------- Lesson tiles -------- */
+.lesson-grid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.lesson-tile {
+    display: block;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+    .lesson-tile h3 {
+        margin: 0 0 6px;
+        font-size: 16px;
+    }
+
+    .lesson-tile p {
+        margin: 0;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .lesson-tile:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .lesson-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .lesson-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px 12px;
+    color: #666;
+}
