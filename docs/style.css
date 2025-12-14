@@ -500,3 +500,33 @@ main {
         grid-template-columns: 1fr;
     }
 }
+/* ---------- Profile Page ---------- */
+.profile-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.profile-header h2 {
+    margin-top: 0;
+}
+
+.profile-stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-stats li {
+    margin: 6px 0;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .profile-page {
+        padding: 14px;
+    }
+}
