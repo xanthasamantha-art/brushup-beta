@@ -1,0 +1,172 @@
+/* ---------- Gallery Page ---------- */
+.gallery-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.gallery-tile {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fff;
+}
+
+.thumb {
+    height: 140px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    border: 1px dashed #ccc;
+    margin-bottom: 10px;
+}
+
+.placeholder {
+    opacity: 0.9;
+}
+
+.note {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ---------- Global ---------- */
+
+
+* {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera, and Firefox */
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+.page-title {
+    margin: 0;
+}
+
+.prompt-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fafafa;
+    cursor: pointer;
+    max-width: 420px;
+}
+
+    .prompt-area:active {
+        transform: scale(0.98);
+    }
+
+
+.prompt-area {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+
+    .prompt-area:hover {
+        background: #f2f2f2;
+    }
+
+.arty-icon {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.prompt-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt-subtext {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.prompt-reveal {
+    margin-top: 8px;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+}
+
+
+/* ---------- Navigation ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+/* ---------- Main Content ---------- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Old Edge */
+}
