@@ -362,3 +362,99 @@ main {
     margin-top: 8px;
     color: #333;
 }
+/* ---------- Lesson Page Template ---------- */
+.page-title {
+    margin: 18px 0 10px;
+    text-align: center;
+}
+
+.lesson-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.lesson-actions h2,
+.lesson-summary h2 {
+    margin-top: 0;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.action-button {
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    background: #f7f7f7;
+}
+
+    .action-button:hover {
+        background: #efefef;
+    }
+
+.note {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Bottom prev/next buttons */
+.lesson-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #333;
+    background: #ffffff;
+}
+
+    .nav-button:hover {
+        background: #f3f3f3;
+    }
+
+/* Footer (simple + optional) */
+.site-footer {
+    text-align: center;
+    padding: 20px 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-nav {
+        flex-direction: column;
+    }
+}
