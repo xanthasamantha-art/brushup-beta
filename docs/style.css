@@ -458,3 +458,45 @@ main {
         flex-direction: column;
     }
 }
+/* ---------- Shop Page ---------- */
+.shop-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.shop-intro p {
+    margin: 8px 0;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.shop-item {
+    border: 1px dashed #ccc;
+    border-radius: 12px;
+    padding: 14px;
+    background: #fafafa;
+}
+
+    .shop-item h3 {
+        margin-top: 0;
+    }
+
+.placeholder {
+    opacity: 0.85;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+}
