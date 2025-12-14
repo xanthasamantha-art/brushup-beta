@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/artylogo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug Report - BrushUp</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Bug Report</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="unit1.html">Unit 1</a>
+        <a href="projects.html">Projects</a>
+        <a href="shop.html">Shop</a>
+        <a href="profile.html">Profile</a>
+        <a href="bug-report.html">Bug Report!</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Report a Bug</h2>
+            <p>
+                Hello! Please use this page to report any pesky bugs you come across while on the site!
+                Bug bounty is <strong>100 Arty Coins</strong> for any reproducible bugs.
+            </p>
+            <p>
+                Me and Arty will personally investigate - if we find and fix a bug thanks to you,
+                we'll add coins to your account!
+            </p>
+
+            <form id="bugForm" class="form">
+                <div class="field">
+                    <label for="doing">What were you doing?</label>
+                    <textarea id="doing" name="doing" rows="3" required></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="steps">Steps to reproduce?</label>
+                    <textarea id="steps" name="steps" rows="4" required></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="screenshot">Screenshot link (optional)</label>
+                    <input id="screenshot" name="screenshot" type="url" placeholder="Paste an image link (Google Drive, Imgur, etc.)" />
+                    <small class="hint">Tip: upload your screenshot somewhere and paste the share link here.</small>
+                </div>
+
+                <div class="field">
+                    <label for="browser">Browser / device?</label>
+                    <input id="browser" name="browser" type="text" placeholder="e.g., Chrome on Windows, Safari on iPhone" required />
+                </div>
+
+                <div class="field">
+                    <label>Can you reproduce this every time?</label>
+                    <div class="radioRow">
+                        <label><input type="radio" name="repro" value="Yes" required /> Yes</label>
+                        <label><input type="radio" name="repro" value="No" required /> No</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="username">BrushUp username?</label>
+                    <input id="username" name="username" type="text" placeholder="Your BrushUp username" required />
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="button">Submit Bug Report</button>
+                    <button type="button" id="copyBtn" class="button secondary">Copy Report</button>
+                </div>
+
+                <p id="status" class="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="bug-report.js"></script>
+</body>
+</html>
